@@ -1,0 +1,22 @@
+title: MH-SOAR Documentation
+theme: minima
+
+sidebar:
+  - title: Overview
+    url: /
+
+  - title: Branch
+    url: /branch
+
+  - title: User Stories
+    children:
+      - title: POS
+        url: /user-stories#pos
+      - title: Payroll
+        url: /user-stories#payroll
+
+  - title: Process Flows
+    url: /process-flows
+
+  - title: Testing
+    url: /testing
