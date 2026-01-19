@@ -3,39 +3,28 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-.container {
+/* THIS is the magic */
+.layout {
   display: flex;
 }
 
+/* Sidebar */
 .sidebar {
   width: 260px;
-  height: 100vh;
   background: #f6f8fa;
   padding: 20px;
-  position: fixed;
-  overflow-y: auto;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sidebar li {
-  margin: 8px 0;
+  height: 100vh;
 }
 
 .sidebar a {
-  text-decoration: none;
+  display: block;
+  margin: 8px 0;
   color: #0969da;
+  text-decoration: none;
 }
 
-.sidebar ul ul {
-  padding-left: 15px;
-}
-
+/* Main content */
 .content {
-  margin-left: 280px;
   padding: 40px;
-  max-width: 900px;
+  flex: 1;
 }
