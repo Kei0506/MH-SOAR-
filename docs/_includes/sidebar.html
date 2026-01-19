@@ -1,0 +1,24 @@
+<nav class="sidebar">
+  <h2>{{ site.title }}</h2>
+  <ul>
+    {% for item in site.sidebar %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        {% else %}
+          <span>{{ item.title }}</span>
+        {% endif %}
+
+        {% if item.children %}
+          <ul>
+            {% for child in item.children %}
+              <li>
+                <a href="{{ child.url }}">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
